@@ -23,3 +23,22 @@ function reverse(n) {
     return Math.sign(n) * parseInt(reversed);
 }
 console.log(reverse(869))
+
+function fizzBuzz(arr){
+    for (var i =0; i <arr.length; i++){
+        if (arr[i] % 3 === 0 && arr[i] % 5 === 0){
+            console.log('FizzBuzz')
+        }
+        else if(arr[i] % 3 === 0){
+            console.log(arr[i],'fizz')
+        }
+        else if(arr[i] % 5 === 0){
+            console.log(arr[i],'buzz')
+        }
+        else{
+            console.log(arr[i])
+        }
+        }
+        return arr
+    }
+    console.log(fizzBuzz([1,2,3,4,5,6,7,8,9,10, 15]))
